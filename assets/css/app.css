@@ -1,0 +1,332 @@
+/* Strat Globle CSS */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+:root {
+    --gold : #FFC735;
+    --primary : #FBF4E2 ;
+    --primary_bg : #F9F8F4;
+    --green : #B4D51E ;
+    --blue : #463C74;
+    --blue-op50 : #473d7699;
+    --white:#ffffff;
+    --gray-dark:#828282;
+    --gray-light:#94A2B3;
+    --gray-light2:#F8F7F5;
+    --block:#000000;
+    --block-op60:#00000099;
+}
+body{
+    font-family: 'Merriweather', serif;
+}
+section{
+    padding: 5vh 0;
+}
+h1 , h2 , h3{
+    color: var(--blue);
+    font-weight: 700;
+ }
+.text-success{
+    color: var(--green) !important;
+}
+.btn-success{
+    background-color: var(--green) !important;
+    border-color : var(--green) !important
+}
+.btn-success:hover , .btn-success:active{
+    background-color: transparent !important;
+    color: var(--green) !important;
+    border-color: var(--green) !important;
+}
+/* Header section */
+/* Header top nav */
+header .top .navbar-brand {
+    font-family: 'McLaren', cursive;
+    color: var(--blue);
+    font-size: 24px;
+
+}
+header .top .navbar-brand span{
+    color: var(--green);
+}
+header .top input{
+    background-color: var(--gray-light2) !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding-left: 20px !important;
+    padding-right: 60px !important;
+    font-size: 16px;
+}
+header .top .action{
+    color: var(--blue);
+    font-size: 18px;
+}
+header .top .action .rounded-circle{
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 50%;
+}
+header .top .action .en{
+    font-size: 18px;
+}
+/* Header botton nav */
+header .bottom .nav-link , header #nav-bottom .nav-link {
+    color: var(--blue-op50);
+    font-size: 18px;
+}
+header .bottom .nav-link.active , header #nav-bottom .nav-link.active ,
+header .bottom .nav-link:hover , header #nav-bottom .nav-link:hover{
+    color: var(--blue) !important;
+    border-bottom: 2px solid var(--green);
+}
+/* List Book */
+.offcanvas .offcanvas-title {
+    color: var(--blue);
+    word-spacing: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 1px 14px var(--green);
+}
+#listBook .offcanvas-body .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #333;
+
+}
+#listBook .offcanvas-body .row .col{
+   margin-top: 10px;
+   color: var(--blue);
+   font-weight: bold;
+}
+#listBook .offcanvas-body .row .col button{
+    margin-bottom: 5px;
+    color: var(--white);
+    font-size: 15px;
+    background-color: var(--green);
+    border: solid 2px var(--green);
+    padding: 5px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+ #listBook .offcanvas-body .row .col button:hover{
+    color: var(--green);
+    font-size: 15px;
+    background-color: var(--white);
+ }
+
+
+/* hero section */
+.hero .row {
+    background: var(--primary) url(../img/hero-bgi.svg) no-repeat 50px 0;
+    background-size: 200px;
+    border-radius: 50px;
+}
+.hero .row h1 {
+   font-size: 48px;
+}
+.hero .row p {
+   color: var(--block);
+   font-size: 18px;
+   padding: 20px 0 10px;
+}
+
+.hero .carousel-indicators [data-bs-target] {
+    background-color: var(--blue-op50);
+    width: 25px ;
+    height: 5px;
+    border: 1px solid transparent !important;
+    border-radius: 5px !important; 
+}
+.hero .carousel-indicators [data-bs-target].active {
+    background-color: var(--green);
+}
+
+/* popular */
+.popular .head h2{
+  font-size: 32px;
+}
+.popular .head p{
+  font-size: 24px;
+  color: var(--gray-dark);
+}
+.popular .card{
+   min-height: 520px ;
+}
+.popular .card img.top{
+    min-width: 182px;
+    height: 263px;
+}
+.popular .card button{
+   height: 0px !important;
+   overflow: hidden;
+   padding: 0;
+   border: none;
+   /* opacity: 0 !important; */
+   transition: 0.5s;
+}
+.popular .card:hover button{
+    padding: 2.5px 10px;
+   height: 40px !important;
+   opacity: 1 !important;
+
+}
+.popular .stars .bi-star-fill {
+    color: #F0F0F0;
+    cursor: pointer;
+}
+.popular .stars .bi-star-fill.active{
+    color: var(--green);
+}
+.popular .text{
+    padding-left: 10px;
+    font-size: 12px !important;
+}
+.popular .bi-dot{
+    font-size: 20px !important;
+    font-weight: bolder;
+}
+/* last */
+.last .head h2{
+  font-size: 32px;
+}
+.last .head p{
+  font-size: 24px;
+  color: var(--gray-dark);
+}
+.last .card{
+   min-height: 520px ;
+}
+.last .card img.top{
+    min-width: 182px;
+    height: 263px;
+}
+.last .card button{
+   height: 0px !important;
+   overflow: hidden;
+   padding: 0;
+   border: none;
+   /* opacity: 0 !important; */
+   transition: 0.5s;
+}
+.last .card:hover button{
+    padding: 2.5px 10px;
+   height: 40px !important;
+   opacity: 1 !important;
+
+}
+.last .stars .bi-star-fill {
+    color: #F0F0F0;
+    cursor: pointer;
+}
+.last .stars .bi-star-fill.active{
+    color: var(--green);
+}
+.last .text{
+    padding-left: 10px;
+    font-size: 12px !important;
+}
+.last .bi-dot{
+    font-size: 20px !important;
+    font-weight: bolder;
+}
+
+
+
+/* Recommended section */
+.recommended .container {
+    background: var(--primary) url(../img/recommended.svg) no-repeat right 0;
+    border-radius: 50px;
+    min-height: 499px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recommended h1 {
+   font-size: 48px;
+}
+
+.recommended .btn {
+   width: 158px !important;
+   height: 71px !important;
+   margin: auto;
+}
+@media (max-width : 768px ) {
+    .recommended h1 {
+        font-size: 30px;
+     } 
+     .recommended .content {
+        width: 100% !important;
+     }
+
+}
+
+
+/* testimony */
+.testimony .card {
+    position: relative;
+    min-height: 196.57px;
+    padding: 20px 40px;
+}
+.testimony .card img {
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+}
+.testimony .card img.top-center{
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.testimony .card img.top-right{
+    right: 10px;
+    transform: translate(0, -50%);
+}
+.testimony .card .content h6{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.testimony .card .content p{
+    font-size: 14px;
+    color:var(--gray-light);
+}
+
+
+/* footer */
+footer {
+     background-color: var(--primary);
+}
+
+footer nav a , footer p {
+    color: var(--gray-dark) !important;
+    text-decoration: none;
+    margin-top: 10px;
+} 
+footer nav a:hover, footer nav p:hover {
+    color: var(--block) !important
+} 
+
+footer .navbar-brand {
+    font-family: 'McLaren', cursive;
+    color: var(--blue);
+    font-size: 24px;
+
+}
+footer .navbar-brand span{
+    color: var(--green);
+}
+
+/* go up  */
+#goUp {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+
+
+
